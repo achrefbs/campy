@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/djo/Desktop/playground/campy/campy/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/achref/Projects/campy/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/djo/Desktop/playground/campy/campy/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/home/achref/Projects/campy/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

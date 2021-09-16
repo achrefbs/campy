@@ -1,5 +1,9 @@
+import 'package:campi/helper/auth.helper.dart';
+import 'package:campi/helper/locations.helper.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:latlong2/latlong.dart' as latLng;
+import 'package:provider/provider.dart';
 
 class AddLocationScreen extends StatefulWidget {
   final latLng.LatLng point;
@@ -10,8 +14,13 @@ class AddLocationScreen extends StatefulWidget {
 }
 
 class _AddLocationScreenState extends State<AddLocationScreen> {
+  final TextEditingController _titleController = TextEditingController();
+  final TextEditingController _descriptionController = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    AuthHelper auth = Provider.of<AuthHelper>(context);
+    LocationHelper loc = Provider.of<LocationHelper>(context);
+    User currentUser = auth.currentUser;
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
@@ -63,11 +72,24 @@ class _AddLocationScreenState extends State<AddLocationScreen> {
                 children: [
                   makeInput(
                     label: "Name Of the Place",
+                    controller: _titleController,
                   ),
                   makeInput(
                     label: "Description",
+                    controller: _descriptionController,
                   ),
-                  Text("Image")
+                  MaterialButton(
+                    onPressed: () {
+                      loc.addLocation(
+                        title: _titleController.text,
+                        description: _descriptionController.text,
+                        location: widget.point,
+                        uploaderID: currentUser.uid,
+                      );
+                      Navigator.pop(context);
+                    },
+                    child: Text("add"),
+                  )
                 ],
               ),
             ),
