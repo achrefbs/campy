@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'package:campi/providers/auth.helper.dart';
 import 'package:campi/providers/locations.helper.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:latlong2/latlong.dart' as latLng;
@@ -57,7 +56,6 @@ class _AddLocationScreenState extends State<AddLocationScreen> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        brightness: Brightness.light,
         backgroundColor: Colors.white,
         leading: IconButton(
           icon: const Icon(

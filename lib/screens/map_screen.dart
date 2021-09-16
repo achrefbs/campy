@@ -1,8 +1,8 @@
+import 'package:campi/models/location.dart';
 import 'package:campi/providers/locations.helper.dart';
 import 'package:campi/screens/add_location_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
-import 'package:latlong2/latlong.dart' as latLng;
 import 'package:latlong2/latlong.dart';
 import 'package:provider/provider.dart';
 
@@ -14,7 +14,12 @@ class MapScreen extends StatefulWidget {
 class _MapScreenState extends State<MapScreen> {
   var marker = <Marker>[];
   bool isSelecting = false;
-  latLng.LatLng point = latLng.LatLng(51.5, -0.09);
+  late Location selected;
+  bool infoWindowVisible = false;
+  LatLng point = LatLng(51.5, -0.09);
+  late LatLng markerCoords;
+  double infoWindowOffset = 0.002;
+  late LatLng infoWindowCoords;
 
   @override
   void didChangeDependencies() {
@@ -27,10 +32,26 @@ class _MapScreenState extends State<MapScreen> {
                 element.data().latitude,
                 element.data().longitude,
               ),
-              builder: (ctx) => Icon(
-                Icons.location_on,
-                color: Colors.red,
-                size: 40,
+              builder: (ctx) => GestureDetector(
+                onTap: () {
+                  setState(() {
+                    selected = element.data();
+                    markerCoords = LatLng(
+                      element.data().latitude,
+                      element.data().longitude,
+                    );
+                    infoWindowVisible = true;
+                    infoWindowCoords = LatLng(
+                      markerCoords.latitude + infoWindowOffset,
+                      markerCoords.longitude,
+                    );
+                  });
+                },
+                child: Icon(
+                  Icons.location_on,
+                  color: Colors.red,
+                  size: 40,
+                ),
               ),
             ),
           );
@@ -51,6 +72,9 @@ class _MapScreenState extends State<MapScreen> {
               options: MapOptions(
                 onLongPress: (tp, location) {},
                 onTap: (tp, location) {
+                  setState(() {
+                    infoWindowVisible = false;
+                  });
                   if (isSelecting == true) {
                     setState(() {
                       point = location;
@@ -79,6 +103,18 @@ class _MapScreenState extends State<MapScreen> {
                 MarkerLayerOptions(
                   markers: [
                     ...marker,
+                    if (infoWindowVisible)
+                      Marker(
+                        width: 200.0,
+                        height: 200.0,
+                        point: infoWindowCoords,
+                        builder: (BuildContext ctx) {
+                          return Container(
+                            color: Colors.orange,
+                            child: Text(selected.title),
+                          );
+                        },
+                      ),
                   ],
                 ),
               ],
