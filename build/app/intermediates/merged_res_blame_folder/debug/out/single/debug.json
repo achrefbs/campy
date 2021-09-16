@@ -1,30 +1,30 @@
 [
     {
-        "merged": "/home/achref/Projects/campy/build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/home/achref/Projects/campy/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "/home/djo/Desktop/playground/campy/campy/build/app/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/djo/Desktop/playground/campy/campy/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/achref/Projects/campy/build/app/intermediates/res/merged/debug/drawable-v21_launch_background.xml.flat",
-        "source": "/home/achref/Projects/campy/android/app/src/main/res/drawable-v21/launch_background.xml"
+        "merged": "/home/djo/Desktop/playground/campy/campy/build/app/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/djo/Desktop/playground/campy/campy/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/achref/Projects/campy/build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat",
-        "source": "/home/achref/Projects/campy/android/app/src/main/res/drawable/launch_background.xml"
+        "merged": "/home/djo/Desktop/playground/campy/campy/build/app/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/djo/Desktop/playground/campy/campy/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/achref/Projects/campy/build/app/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/home/achref/Projects/campy/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "/home/djo/Desktop/playground/campy/campy/build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat",
+        "source": "/home/djo/Desktop/playground/campy/campy/android/app/src/main/res/drawable/launch_background.xml"
     },
     {
-        "merged": "/home/achref/Projects/campy/build/app/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/home/achref/Projects/campy/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "/home/djo/Desktop/playground/campy/campy/build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/djo/Desktop/playground/campy/campy/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/achref/Projects/campy/build/app/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/home/achref/Projects/campy/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "/home/djo/Desktop/playground/campy/campy/build/app/intermediates/res/merged/debug/drawable-v21_launch_background.xml.flat",
+        "source": "/home/djo/Desktop/playground/campy/campy/android/app/src/main/res/drawable-v21/launch_background.xml"
     },
     {
-        "merged": "/home/achref/Projects/campy/build/app/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/home/achref/Projects/campy/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "/home/djo/Desktop/playground/campy/campy/build/app/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/djo/Desktop/playground/campy/campy/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     }
 ]
