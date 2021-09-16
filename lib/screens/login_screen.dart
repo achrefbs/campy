@@ -15,7 +15,6 @@ class LoginScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         appBar: AppBar(
           elevation: 0,
-          brightness: Brightness.light,
           backgroundColor: Colors.white,
           leading: IconButton(
             icon: const Icon(

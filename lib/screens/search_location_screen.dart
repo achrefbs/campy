@@ -16,7 +16,6 @@ class _AddLocationScreenState extends State<AddLocationScreen> {
       backgroundColor: Color.fromRGBO(244, 243, 243, 1),
       appBar: AppBar(
         backgroundColor: Colors.black,
-        brightness: Brightness.light,
         elevation: 0,
         title: Text(
           "Add Location",
