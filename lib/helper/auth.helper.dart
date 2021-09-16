@@ -4,6 +4,8 @@ import 'package:flutter/cupertino.dart';
 class AuthHelper with ChangeNotifier {
   FirebaseAuth auth = FirebaseAuth.instance;
 
+  get currentUser => auth.currentUser;
+
   attemptSignUp(email, password, passwordConfirmation) async {
     print(
       "email = $email\npassword = $password\npassword confirmation = $passwordConfirmation",
