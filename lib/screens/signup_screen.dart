@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class SignupScreen extends StatelessWidget {
-  TextEditingController _emailController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
-  TextEditingController _passwordConfirmationController =
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _passwordConfirmationController =
       TextEditingController();
 
   @override
