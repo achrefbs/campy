@@ -12,6 +12,7 @@ class AuthHelper with ChangeNotifier {
       print('Passwords doesn\'t match');
     } else {
       try {
+        // ignore: unused_local_variable
         UserCredential userCredential =
             await auth.createUserWithEmailAndPassword(
           email: email,
@@ -31,6 +32,7 @@ class AuthHelper with ChangeNotifier {
 
   attemptLogin(email, password) async {
     try {
+      // ignore: unused_local_variable
       UserCredential userCredential = await auth.signInWithEmailAndPassword(
         email: email,
         password: password,

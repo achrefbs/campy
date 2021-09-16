@@ -1,4 +1,5 @@
 import 'package:campi/helper/auth.helper.dart';
+import 'package:campi/screens/map_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'signup_screen.dart';
@@ -92,6 +93,12 @@ class LoginScreen extends StatelessWidget {
                       auth.attemptLogin(
                         _emailController.text.trim(),
                         _passwordController.text.trim(),
+                      );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MapScreen(),
+                        ),
                       );
                     },
                     color: Colors.greenAccent,
