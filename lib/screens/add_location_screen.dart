@@ -1,5 +1,5 @@
-import 'package:campi/helper/auth.helper.dart';
-import 'package:campi/helper/locations.helper.dart';
+import 'package:campi/providers/auth.helper.dart';
+import 'package:campi/providers/locations.helper.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:latlong2/latlong.dart' as latLng;
@@ -20,7 +20,7 @@ class _AddLocationScreenState extends State<AddLocationScreen> {
   Widget build(BuildContext context) {
     AuthHelper auth = Provider.of<AuthHelper>(context);
     LocationHelper loc = Provider.of<LocationHelper>(context);
-    User currentUser = auth.currentUser;
+    var currentUser = auth.currentUser;
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,

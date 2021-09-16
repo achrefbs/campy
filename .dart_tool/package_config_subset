@@ -4,8 +4,8 @@ file:///home/achref/Projects/campy/
 file:///home/achref/Projects/campy/lib/
 async
 2.12
-file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.6.1/
-file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.6.1/lib/
+file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.1/
+file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.1/lib/
 boolean_selector
 2.12
 file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/
@@ -16,8 +16,8 @@ file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.o
 file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.1.0/lib/
 charcode
 2.12
-file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.2.0/
-file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.2.0/lib/
+file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.3.1/
+file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.3.1/lib/
 clock
 2.12
 file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.0/
@@ -104,8 +104,8 @@ file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.o
 file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.10/lib/
 meta
 2.12
-file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.3.0/
-file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.3.0/lib/
+file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.7.0/
+file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.7.0/lib/
 mgrs_dart
 2.12
 file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/mgrs_dart-2.0.0/
@@ -164,8 +164,8 @@ file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.o
 file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.2.0/lib/
 test_api
 2.12
-file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.3.0/
-file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.3.0/lib/
+file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.4.2/
+file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.4.2/lib/
 transparent_image
 2.12
 file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/transparent_image-2.0.0/

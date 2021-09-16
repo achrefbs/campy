@@ -1,4 +1,4 @@
-import 'package:campi/helper/auth.helper.dart';
+import 'package:campi/providers/auth.helper.dart';
 import 'package:campi/screens/map_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
