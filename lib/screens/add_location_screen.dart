@@ -1,8 +1,12 @@
+import 'dart:io';
 import 'package:campi/providers/auth.helper.dart';
 import 'package:campi/providers/locations.helper.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:latlong2/latlong.dart' as latLng;
 import 'package:provider/provider.dart';
+import 'package:image_picker/image_picker.dart';
 
 class AddLocationScreen extends StatefulWidget {
   final latLng.LatLng point;
@@ -15,6 +19,34 @@ class AddLocationScreen extends StatefulWidget {
 class _AddLocationScreenState extends State<AddLocationScreen> {
   final TextEditingController _titleController = TextEditingController();
   final TextEditingController _descriptionController = TextEditingController();
+  File? image;
+
+  Future pickImageFromGal() async {
+    try {
+      final image = await ImagePicker().pickImage(source: ImageSource.gallery);
+      if (image == null) return;
+      final imageTemporary = File(image.path);
+      setState(() {
+        this.image = imageTemporary;
+      });
+    } on PlatformException catch (e) {
+      print("Failed to pick image: $e");
+    }
+  }
+
+  Future pickImageFromCam() async {
+    try {
+      final image = await ImagePicker().pickImage(source: ImageSource.camera);
+      if (image == null) return;
+      final imageTemporary = File(image.path);
+      setState(() {
+        this.image = imageTemporary;
+      });
+    } on PlatformException catch (e) {
+      print("Failed to pick image: $e");
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     AuthHelper auth = Provider.of<AuthHelper>(context);
@@ -25,6 +57,7 @@ class _AddLocationScreenState extends State<AddLocationScreen> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
+        brightness: Brightness.light,
         backgroundColor: Colors.white,
         leading: IconButton(
           icon: const Icon(
@@ -75,6 +108,15 @@ class _AddLocationScreenState extends State<AddLocationScreen> {
                   makeInput(
                     label: "Description",
                     controller: _descriptionController,
+                  ),
+                  Text("Image"),
+                  ElevatedButton(
+                    onPressed: () => pickImageFromGal(),
+                    child: Text("Pick Image"),
+                  ),
+                  ElevatedButton(
+                    onPressed: () => pickImageFromCam(),
+                    child: Text("Pick Image"),
                   ),
                   MaterialButton(
                     onPressed: () {
