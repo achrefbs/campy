@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
                 ),
               ],
               child: MaterialApp(
-                title: "Campy",
+                title: "Campi",
                 home: HomeScreen(),
               ),
             );

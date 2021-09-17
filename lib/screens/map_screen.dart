@@ -64,6 +64,7 @@ class _MapScreenState extends State<MapScreen> {
   Widget build(BuildContext context) {
     LocationHelper loc = Provider.of<LocationHelper>(context);
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(title: Text("Campy")),
       body: FutureBuilder(
           future: loc.allLocations(),
