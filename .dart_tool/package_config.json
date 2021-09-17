@@ -33,7 +33,7 @@
     },
     {
       "name": "cloud_firestore",
-      "rootUri": "file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-2.5.2",
+      "rootUri": "file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-2.5.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -159,9 +159,9 @@
     },
     {
       "name": "image_picker",
-      "rootUri": "file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4+1",
+      "rootUri": "file:///home/achref/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4+2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.14"
     },
     {
       "name": "image_picker_for_web",
@@ -350,7 +350,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-09-16T22:35:51.544843Z",
+  "generated": "2021-09-17T12:05:10.019773Z",
   "generator": "pub",
   "generatorVersion": "2.14.0"
 }
