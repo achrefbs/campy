@@ -110,8 +110,36 @@ class _MapScreenState extends State<MapScreen> {
                         point: infoWindowCoords,
                         builder: (BuildContext ctx) {
                           return Container(
-                            color: Colors.orange,
-                            child: Text(selected.title),
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(30),
+                              image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: AssetImage("assets/images/down.png"),
+                              ),
+                            ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text(
+                                  selected.title,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(
+                                  selected.desctiption,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.normal,
+                                    height: 2,
+                                  ),
+                                )
+                              ],
+                            ),
                           );
                         },
                       ),
